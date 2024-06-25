@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Redirigir a la página del canal de WhatsApp después de enviar el formulario
         setTimeout(function() {
             window.location.href = 'https://whatsapp.com/channel/0029Vaimr1d6mYPKmkt4Jr1j';
-            window.close();
         }, 1000); // Redirección después de 1 segundo (ajusta el tiempo según sea necesario)
+    window.close();
     });
 });
