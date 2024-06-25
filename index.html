@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>Registro</h2>
-        <form action="https://formspree.io/f/xvgppwpg" method="post" onsubmit="return handleFormSubmission()">
+        <form id="registroForm" action="https://formspree.io/f/xvgppwpg" method="post">
             <div class="form-group">
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -34,16 +34,11 @@
             <input type="submit" value="Enviar">
         </form>
 
-        <p class="info-text">Tus datos están seguros con nosotros. Los utilizaremos para proporcionarte un servicio personalizado y relevante.</p>
+        <p class="info-text">Nos comprometemos a salvaguardar tus datos personales. La información que nos proporciones será utilizada exclusivamente para ofrecerte un servicio altamente personalizado y relevante. Valoramos tu privacidad y aseguramos que tus datos serán tratados con la máxima confidencialidad y conforme a la legislación vigente en protección de datos. Siempre estaremos disponibles para responder cualquier pregunta o inquietud que puedas tener sobre el manejo de tu información personal.</p>
+
     </div>
 
-    <script>
-        function handleFormSubmission() {
-            // Puedes realizar acciones adicionales aquí antes de permitir el envío del formulario
-
-            // Devolver true para permitir que el formulario se envíe
-            return true;
-        }
-    </script>
+    <!-- Incluir el archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
