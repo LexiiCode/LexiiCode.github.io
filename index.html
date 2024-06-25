@@ -25,6 +25,7 @@
             <div class="form-group">
                 <label for="genero">Género:</label>
                 <select id="genero" name="genero" required>
+                    <option value="">Seleccione una opción</option>
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
                     <option value="otro">Otro</option>
@@ -38,11 +39,10 @@
 
     <script>
         function handleFormSubmission() {
-            // Redirigir a la página deseada después de enviar el formulario
-            window.location.href = 'https://whatsapp.com/channel/0029Vaimr1d6mYPKmkt4Jr1j';
+            // Puedes realizar acciones adicionales aquí antes de permitir el envío del formulario
 
-            // Devolver false para prevenir el comportamiento predeterminado del formulario
-            // (que es enviarlo directamente)
+            // Devolver true para permitir que el formulario se envíe
+            return true;
         }
     </script>
 </body>
