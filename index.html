@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <form action="https://formspree.io/f/xvgppwpg" method="post" onsubmit="return handleFormSubmission()">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <p class="info-text">Tus datos están seguros con nosotros. Los utilizaremos para proporcionarte un servicio personalizado y relevante.</p>
+    </div>
+
+    <script>
+        function handleFormSubmission() {
+            // Redirigir a la página deseada después de enviar el formulario
+            window.location.href = 'https://whatsapp.com/channel/0029Vaimr1d6mYPKmkt4Jr1j';
+
+            // Devolver false para prevenir el comportamiento predeterminado del formulario
+            // (que es enviarlo directamente)
+            return false;
+        }
+    </script>
+</body>
+</html>
